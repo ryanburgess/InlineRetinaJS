@@ -14,6 +14,7 @@
         // Replace screenshots with @2x version if retina screen
         $(".hd").each(function() {
             var image = $(this).attr("src");
+            var imageWidth = $(this).width();
             var ext = image.split(".").pop();
             var updateImage;
             if(ext == "png"){
@@ -23,6 +24,7 @@
             }else if(ext == "jpeg"){
                 updateImage = image.replace(".jpeg", "@2x.jpeg");
             }
+            $(this).attr("width", imageWidth);
             $(this).attr("src", updateImage);
         });
     }
