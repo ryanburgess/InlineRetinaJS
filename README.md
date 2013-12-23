@@ -20,4 +20,5 @@ Add a class "hd" to all inline images that also have a retina version available.
 Example:
 
 Original inline image: images/hero-skitch.png
+
 Retina version: images/hero-skitch@2x.png
