@@ -1,0 +1,25 @@
+{
+    "name": "InlineRetinaJS",
+    "version": "0.0.2",
+    "main": "InlineRetina.js",
+    "ignore": [
+        "source",
+        "spec",
+        ".bowerrc",
+        ".gitignore",
+        ".jshintignore",
+        ".jshintrc",
+        "bower.json",
+        "gruntfile.js",
+        "package.json",
+        "README.md"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/ryanburgess/InlineRetinaJS.git"
+    },
+    "authors": [
+        "Ryan Burgess", "Ryan Burgess",
+        "Ryan Burgess <github.com/ryanburgess> (http://github.com/ryanburgess)"
+    ]
+}
