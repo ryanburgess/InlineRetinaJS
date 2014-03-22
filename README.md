@@ -3,15 +3,15 @@ InlineRetinaJS
 
 A simple way to use inline retina images without all the extra HTML markup.
 
+[DEMO](http://htmlpreview.github.io/?https://github.com/ryanburgess/InlineRetinaJS/master/index.html)
 
-Requirements
-==============
+
+## Requirements
 
 JQuery
 
 
-How to use
-==============
+## How to use
 
 Add InlineRetina.js after referencing JQuery.
 
@@ -20,4 +20,13 @@ Add a class "hd" to all inline images that also have a retina version available.
 Example:
 
 Original inline image: images/hero-skitch.png
+
 Retina version: images/hero-skitch@2x.png
+
+## Contributing
+
+1. Fork it
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create new Pull Request
