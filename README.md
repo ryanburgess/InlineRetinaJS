@@ -5,6 +5,9 @@ A simple way to use inline retina images without all the extra HTML markup.
 
 [DEMO](http://htmlpreview.github.io/?https://github.com/ryanburgess/InlineRetinaJS/master/index.html)
 
+## Install
+	bower install InlineRetinaJS
+
 
 ## Requirements
 
