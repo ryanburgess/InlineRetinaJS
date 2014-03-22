@@ -1,6 +1,6 @@
 {
   "name": "InlineRetinaJS",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "jQuery plugin for inline retina images",
   "repository": "InlineRetinaJS",
   "author": "Ryan Burgess",
