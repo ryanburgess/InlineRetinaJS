@@ -13,7 +13,7 @@ A simple way to use inline retina images without all the extra HTML markup.
 
 Add inline-retina.min.js to your HTML.
 
-Add a class "hd" to all inline images that also have a retina version available. The retina image needs to be saved with the same name and same directory as the non-retina version but also appending "@2x" to the end of the name.
+Add a class "retina" to all inline images that also have a retina version available. The retina image needs to be saved with the same name and same directory as the non-retina version but also appending "@2x" to the end of the name.
 
 Example:
 

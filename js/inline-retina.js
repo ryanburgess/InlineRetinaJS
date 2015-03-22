@@ -4,7 +4,7 @@ var query = '(-webkit-min-device-pixel-ratio: 1.5),(min--moz-device-pixel-ratio:
 // If retina screen replace 
 if (window.devicePixelRatio > 1 || (window.matchMedia && window.matchMedia(query).matches)) {
   // Replace screenshots with @2x version if retina screen
-  var images = document.getElementsByClassName('hd');
+  var images = document.getElementsByClassName('retina');
   for (var i = 0; i < images.length; i++){
     var image = images[i].getAttribute('src');
     var imageWidth = images[i].clientWidth;
