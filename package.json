@@ -1,5 +1,5 @@
 {
-  "name": "InlineRetinaJS",
+  "name": "inline-retina",
   "version": "1.0.0",
   "description": "JavaScript module to detect and update inline retina images",
   "main": "index.js",
