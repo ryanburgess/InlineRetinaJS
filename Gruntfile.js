@@ -1,48 +1,44 @@
 module.exports = function(grunt) {
-    grunt.initConfig({
-        pkg: grunt.file.readJSON('package.json'),
-        uglify: {
-            dist: {
-              files:{
-                    'js/InlineRetina.min.js': ['js/InlineRetina.js']
-              },
-            }
+  grunt.initConfig({
+    pkg: grunt.file.readJSON('package.json'),
+    uglify: {
+      dist: {
+        files:{
+          'js/inline-retina.min.js': ['js/inline-retina.js']
         },
-        bump: {
-            options: {
-                files: ['package.json', 'bower.json'],
-                updateConfigs: ["pkg"],
-                commit: true,
-                commitMessage: 'Release v%VERSION%',
-                commitFiles: ['package.json'], // '-a' for all files
-                createTag: true,
-                tagName: 'v%VERSION%',
-                tagMessage: 'Version %VERSION%',
-                commitFiles: ["-a"],
-                push: false
-            }
+      }
+    },
+    jshint: {
+      all: ['**/*.js'],
+      options: {
+        reporter: require('jshint-stylish'),
+        curly: true,
+        eqeqeq: true,
+        eqnull: false,
+        browser: true,
+        indent: 2,
+        quotmark: 'single',
+        unused: false,
+        ignores: ['node_modules/**/*.js','**/*min.js'],
+        globals: {
+          jQuery: true
         },
-        watch: {
-            css: {
-                files: 'source/**/*.scss',
-                tasks: ['sass'],
-                options: { 
-                    spawn: false,
-                    livereload: true 
-                },
-            },
-            scripts: {
-                files: 'js/**/*.js',
-                tasks: ['newer:uglify'],
-                options: { 
-                    spawn: false,
-                    livereload: true 
-                },
-            }
-        }
-    });
-    grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.loadNpmTasks('grunt-newer');
-    grunt.registerTask('default',['watch']);
-}
+      },
+    },
+    watch: {
+      scripts: {
+        files: 'js/**/*.js',
+        tasks: ['newer:uglify', 'newer:jshint'],
+        options: { 
+          spawn: false,
+          livereload: true 
+        },
+      }
+    }
+  });
+  grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-newer');
+  grunt.registerTask('default',['watch']);
+};
