@@ -1,6 +1,8 @@
 Inline Retina
 ==============
 
+[![npm version](https://badge.fury.io/js/inline-retina.svg)](http://badge.fury.io/js/inline-retina)
+
 A simple way to use inline retina images without all the extra HTML markup.
 
 [DEMO](http://htmlpreview.github.io/?https://github.com/ryanburgess/inline-retina/master/index.html)
