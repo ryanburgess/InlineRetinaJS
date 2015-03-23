@@ -1,9 +1,9 @@
-InlineRetinaJS
+Inline Retina
 ==============
 
 A simple way to use inline retina images without all the extra HTML markup.
 
-[DEMO](http://htmlpreview.github.io/?https://github.com/ryanburgess/InlineRetinaJS/master/index.html)
+[DEMO](http://htmlpreview.github.io/?https://github.com/ryanburgess/inline-retina/master/index.html)
 
 ## Install
 	npm install inline-retina
